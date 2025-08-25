@@ -1,0 +1,22 @@
+body {
+    background-color: chocolate;
+}
+
+
+label {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Classe */
+.checkbox-group {
+    label{
+        display: inline-block;
+    }
+}
+.teste {
+    position: absolute;
+    right: 32px;
+    top: 50px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>Formulário de cadastro</h2>
+    <form>
+        <label for="nome">Nome</label>
+        <!-- Label = Rótulo serve pra quando clicarmos na string ele puxar pelo ID a box do input  -->
+        <input type="text" id="nome" Name="Nome" class="input-group" placeholder="Nome" required>
+
+        <label for="email">E-mail</label>
+
+        <input type="text" id="email" Name="email" class="input-group" placeholder="seu@email.com">
+
+        <label for="senha">Senha</label>
+
+        <input type="password" id="senha" placeholder="*********">
+
+        <hr>
+        <label for="regiao">Região</label>
+        <select id="regiao">
+            <option selected disabled>Escolha a Região</option>
+            <option value="Nordeste">Nordeste</option>
+            <option value="Sudeste">Sudeste</option>
+            <option value="Centro-Oeste">Centro-Oeste</option>
+            <option value="Sul">Sul</option>
+            <option value="Norte">Norte</option>
+        </select>
+        <!--  selected ele vai estar pré selecionado. disabled, impossível de selecionar -->
+        <!-- opt*3 pra colar a linha o número de vezes que quiser -->
+        <!-- ID = serve como ancora para puxar essa TAG, e suas informações -->
+        <!-- Name = serve para o servidor identificar o elemento  -->
+        <!-- Class = Serve para manipular o CSS -->
+        <div class="checkbox-group">
+            <label for="cnh">Possui CNH ?</label>
+        <input type="checkbox" id="cnh">
+    </div>
+
+    <div class="checkbox-group">
+            <label for="Graduação">Tem Graduação ?</label>
+        <input type="checkbox" id="graduacao">
+    </div>
+        <button>Enviar</button>
+        <button type="reset">Limpar</button>
+        <button class="teste">teste</button>
+    </form>
+</body>
+</html>

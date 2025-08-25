@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Isso vai linkar o meu arquivo HTML ao CSS, HTML é o esqueleto e CSS a decoração da página. -->
+    <!-- rel (relationship), indica qual a relção do link. href (hypertext reference) caminho a ser percorrido-->
+    <!--Poderia colocar tudo nesse mesmo arquivo, mas pra ficar mais organizado farei separado <style> (Caso fosse no mesmo arquivo)  -->
+</head>
+<body>
+   <form>
+    <input type="text" name="Nome" placeholder="Escreva seu nome">
+    Homem: <input type="radio" name="Gênero" value="Homem">  
+    Mulher: <input type="radio" name="Gênero" value="Mulher">  
+    Outro: <input type="radio" name="Gênero" value="Outro"> 
+    <input type="submit" name="Enviar">
+    <input type="password" name="password" placeholder="Senha">
+    Deixe uma mensagem: <textarea name="mensagem"  placeholder="Escreva uma mensagem"></textarea>
+    <select name="carro">
+        <option value="carro1">Arguinho</option>
+        <option value="carro2">Corolla</option>
+    </select>
+    <button>Submit</button>
+    <!-- tem que ter esses atributos no input. type (qual tipo de input vai ser), name(nome do input)-->
+    <!-- O atributo placeholder, são aquelas pequenas indicações para o usuário do que por no campo  -->
+    <!-- Existe também o value, onde invés de ser algo que ao clicar some, já fica algo dentro do input escrito -->
+    <!-- type = radio, cria um circulo em que podemos clicar pra selecionar algo. -->
+    <!-- Eles são de opção úncia, se clicar em um, o outro é desselecionado. Se quiser, pode escrever checked em algum dos, e ele estará pré-selecionado. -->
+    <!-- Outro type = submit, serve como botão. -->
+    <!-- Também existe o type password -->
+    <!-- textarea, abre um bloco de texto  -->
+    <!--Abre uma dropbox de opções.  -->
+   </form>
+</body>
+</html>
