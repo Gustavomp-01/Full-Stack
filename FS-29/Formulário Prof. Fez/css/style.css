@@ -1,0 +1,109 @@
+
+/* Reset (limpa as config. padrões dos navegadores) */
+/* Asterísco representa tudo (Caracteri coringa) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bebebe;
+}
+
+form{
+    background-color: #f9f9f9;
+    width: 400px;
+    margin: 32px auto;
+    padding: 32px;
+    border-radius: 12px;
+    /* teste de borda */
+    border: solid 1px red
+    
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+}
+
+/* Apenas os inputs que estão dentro diretamente do form */
+form > input {
+    width: 100%;
+}
+
+/* Classe */
+.checkbox-group {
+   
+    label {
+        display: inline-block;
+    }
+}
+
+/* Framework para os botões */
+button {
+
+    margin: 16px 0;
+    /* width: 100px; */
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: solid 1px #d6d6d6;
+    box-shadow: 0px 2px 4px 0px #848181;
+    /* X Y Desfoque Espessura Cor */
+    /* border-top-left-radius: 16px; */
+    /* border-bottom-right-radius: 16px; */
+    transition: 0.8s;
+
+
+}
+/* Clica emcima do que quer mover e segura alt e move na seta */
+
+/* Hover é uma pseudo class, já pré-existe no código */
+/* Ao passar o mouse sobre */
+button:hover {
+    cursor: pointer;
+    border-color: red; 
+    filter: brightness(75%);
+}
+
+/* Padrão de Cores para o botão */
+.default {
+    /* Cor padrão */
+    background-color: #6a00ff;
+    color: white;
+}
+
+/* Relaciona com o Button:hover */
+.default:hover {
+        background-color: #6a00ff;
+}
+
+.success {
+        background-color: #02bf02;
+        border-color: #006600;
+        color: white;
+
+}
+
+.warning {
+        background-color: #cae404;
+        border-color: #cae404;
+        color: black;
+}
+
+.danger {
+        background-color: #ec0505;
+        border-color: #cae404;
+        color: white;
+}
+
+
+
+
+
+
+
+/* 
+.teste {
+    position: absolute;
+    right: 32px;
+    top: 140px;
+} */

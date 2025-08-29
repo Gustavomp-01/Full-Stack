@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+    <form>
+        <h2>Formulário de Cadastro</h2>
+        <label for="nome">Nome</label>
+        <input
+            type="text"
+            id="nome"
+            placeholder="Informe seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu@email">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="********">
+
+        <hr>
+        <label for="regiao">Região</label>
+        <select id="regiao">
+            <option selected disabled>:: Escolha a região ::</option>
+            <option value="sul">Sul</option>
+            <option value="sudeste">Sudeste</option>
+            <option value="centro">Centro-Oeste</option>
+            <option value="nordeste">Nordeste</option>
+            <option value="norte">Norte</option>
+        </select>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="cnh">
+            <label for="cnh">Tem CNH?</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="graducao">
+            <label for="graducao">Tem Graduação?</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="ingles">
+            <label for="ingles">Tem inglês?</label>
+        </div>
+        <hr>
+        
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+
+        <!-- Exemplo Botões -->
+         <button class="default">Padrão</button>
+
+         <!-- Atalho pra fazer o de cima -> button.default{Padrão} -->
+        <button class="success">Sucesso</button>
+
+        <button class="warning">Alerta</button>
+
+        <button class="danger">Perigo</button>
+        
+        
+        <!-- <button class="teste">Teste</button> -->
+    </form>
+</body>
+</html>
